@@ -1,0 +1,427 @@
+#wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.button{
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #837550;
+    border-radius: 5px; 
+    width: 100%;
+    margin:1.7% 0;
+}
+.button:hover{
+    background-color:#6b5f40;
+}
+
+/*header*/
+header{
+    background-color: #242121;
+    width: 100%;
+    height: 105px;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#nav-bar{
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bar #logo{
+    color: #837550;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+#logo a{
+    color: #837550;
+}
+#nav-bar ul{
+    list-style-type: none;
+    height: 100vh;
+
+    background-color: #242121;
+    padding: 30px;
+    padding-right: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 100%;
+}
+
+#close-menu, #close-popup{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0 20px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#nav-bar .nav-links{
+    color: #837550;
+    margin: 10px 0;
+}
+.nav-links a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #837550;
+    padding: 10px 15px;
+}
+.nav-links a:hover{
+    color: #fff;
+    border-left: 2px solid;
+}
+#nav-bar .button{
+    padding: 15px 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#hamburger{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bars{
+    width: 25px;
+    height: 0;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+/*popup form*/
+#popup-container{
+    background-color: #24212180;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.popup-div{
+    width: 90%;
+    max-width: 900px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+#close-popup{
+    background-color: #d3d3d3;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+#close-popup:hover{
+    background-color: #808080;
+}
+.popup-div h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4% 0;
+    width: 80%;
+    border-top: 7px solid #837550;
+}
+.popup-div p{
+    font-size: 1.7rem;
+    text-align: center;
+    width: 80%;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+fieldset{
+    padding-top: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 1.3rem;
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 7px 0;
+}
+input:focus, textarea:focus{
+    border: 1px solid #000;
+    box-shadow: 0 0 7px 0 #0e0d0d;
+}
+/*end of header*/
+
+/*form*/
+.background{
+    width: 100%;
+    background-image: linear-gradient(130deg, #242121, #616060, #242121);
+    background-image: url(../images/water-tap.jpg);
+    padding: 10% 0 0;
+    margin-top: 95px;
+}
+
+.quote-form{
+    width: 100%;
+    background-color: #fff;
+}
+.quote-form form fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+.quote-form form h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin-bottom: 6%;
+    width: 80%;
+}
+.quote-form form p{
+    width: 80%;
+}
+.quote-form form input{
+    font-size: 1.6rem;
+    width: 80%;
+    padding: 1%;
+    border-color: #646464;
+    margin: 1.7% 0;
+}
+.quote-form form input:focus{
+    box-shadow: 0 0 7px 0;
+}
+.quote-form form .button{
+    padding: 5% 0;
+    display: block;
+}
+/*end form*/
+
+/*banner*/
+.banner{
+    width: 100%;
+    background-image: linear-gradient(130deg, #24212180, #61606080, #24212180);
+    padding: 10% 8%;
+}
+.banner h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*end banner*/
+
+/*content*/
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 25px 30px;
+}
+.content .intro{
+    padding-bottom: 40px;
+}
+.intro h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.content .section{
+    padding: 40px 0;
+    border-top: 8px solid #837550;
+}
+.section h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.section a{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #363535;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    margin-top: 25px;
+    background-color: #d3d3d3;
+    display: inline-block;
+}
+.section .btn:hover{
+    background-color: #a8a5a5;
+}
+/*end content*/
+
+/*ending*/
+.ending{
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #d3d3d3;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ending h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: #000;
+    text-align: center;
+}
+.ending a{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    margin-top: 25px;
+    background-color: #837550;
+    display: inline-block;
+}
+.ending .btn:hover{
+    background-color: #3d3726;
+}
+/*end of ending*/
+
+/*footer*/
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #837550;
+}
+footer .social-icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer .social-icons .img{
+    width: 32px;
+    filter: grayscale(1)
+
+}
+footer .social-icons .img:hover{
+    border: 1px solid #fff;
+}
+footer p{
+    color: #fff;
+}
+footer a{
+    text-decoration: underline;
+    color: #fff;
+}
+/*end footer*/
+
+/*media querie*/
+@media screen and (min-width: 800px){
+    html{
+        font-size: 12px;
+    }
+    .background{
+        display: flex;
+        flex-direction: row;
+        padding: 100px 30px 100px 20px;
+    }
+    .quote-form{
+        max-width: 35%;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*content*/
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px 80px 30px;
+        justify-content: space-between;
+    }
+    .content .intro{
+        width: 100%;
+    }
+    .content .section{
+        width: 45%;
+    }
+    /*end of content*/
+
+    /*footer*/
+    footer .social-icons .img{
+        margin: 0 15px;
+    }
+    /*end of footer*/
+
+}
+
+@media screen and (min-width: 945px){
+    /*header*/
+    #nav-bar ul{
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        margin-right: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: static;
+        right: 0;
+    }
+    #close-menu, #hamburger{
+        display: none;
+    }
+    #nav-bar .nav-links{
+        margin: 0 10px;
+    }
+    .nav-links a{
+        padding: 0;
+    }
+    .nav-links a:hover{
+        padding-bottom: 13px;
+        border-bottom: 2px solid;
+        border-left: none;
+    }
+    #nav-bar .button{
+        margin: 0;
+        margin-left: 10px;
+    }
+    /*end of header*/
+}
+/*end media queries*/

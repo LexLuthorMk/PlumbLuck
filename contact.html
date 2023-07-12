@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url(styles/general-styles.css);
+        @import url(styles/home-styles.css);
+
+        .background{
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner h1{
+            text-align: center;
+        }
+        .section h1, .section p{
+            text-align: center;
+        }
+        .content .section .btn{
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            background-color: #837550;
+        }
+        .content .section .btn:hover{
+            background-color: #3d3726;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav id="nav-bar">
+                <h1 id="logo"><a href="index.html">Plumb Luck</a></h1>
+                <ul id="nav-links">
+                    <li><button id="close-menu">X</button></li>
+                    <li class="nav-links"><a href="about.html">About</a></li>
+                    <li class="nav-links"><a href="services.html">Services</a></li>
+                    <li class="nav-links"><a href="clients.html">Clients</a></li>
+                    <li class="nav-links"><a href="contact.html"
+                        style="color: #fff;">Contact</a></li>
+                    <li><button id="get-quote" class="button"
+                        style="width: auto;">Get free quote</button></li>
+                </ul>
+                <div id="hamburger">
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="popup-container">
+            <div class="popup-div">
+                <button id="close-popup">x</button>
+                <h1>Get a free quote</h1>
+                <p>Fill out the form below and one of our contractors will reach out within 24 
+                    hours.</p>
+                <form id="popup-form">
+                    <fieldset>
+                        <input type="text" id="firstName" name="firstName" 
+                        placeholder="First Name" size="1">
+                        <input type="email" id="email" name="email" 
+                        placeholder="Email" size="1">
+                        <input type="text" id="city" name="city" 
+                        placeholder="City" size="1">
+                        <button id="popup-submit" class="button">Get My Free Quote</button>
+                    </fieldset>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="background">
+            <div class="banner">
+                <h1>Contact us.</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section" style="width: 100%;">
+                <h1>Get in touch with us</h1>
+                <p>
+                    At <span style="text-transform: uppercase;
+                    color:#363535; font-weight: 600;">Plumb luck</span>, our team is 
+                    ready to help with your next home improvement or maintenance task. In 
+                    fact, we are always on-call to meet with you and understand your needs, 
+                    so we can make your problem a quick fix.
+                </p>
+                <form id="user-signup">
+                    <fieldset>
+                        <input type="text" id="userName" name="firstName"
+                         placeholder="First Name" size="1">
+                        <input type="email" id="userEmail" name="email" 
+                        placeholder="Email" size="1">
+                        <textarea placeholder="Comment" size="1"
+                        style="min-width: 10px;"></textarea>
+                        <button id="popup-submit" class="button"
+                        style="border-radius: 5px; margin:1.7% 0;">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <div class="img">
+                    <a href=""><img src="icons/FACEBOOK.PNG" alt="facebook"></a>
+                </div>
+                <div class="img">
+                    <a href=""><img src="icons/TWITTER.PNG" alt="twitter"></a>
+                </div>
+                <div class="img">
+                    <a href=""><img src="icons/LINKEDIN.PNG" alt="linkedIn"></a>
+                </div>
+                <div class="img">
+                    <a href=""><img src="icons/INSTAGRAM.PNG" alt="instagram"></a>
+                </div>
+            </div>
+            <p>©2020 PLUMB LUCK. All rights reserved.  <a href="">Privacy Policy</a>  |  
+                Created by Mike
+            </p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
